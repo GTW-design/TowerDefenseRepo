@@ -11,7 +11,7 @@ public class MoveMe : MonoBehaviour {
     public GameObject shellPrefab;
 
     //A position where the shell will spawn at
-    public Transform shellSpawnPoint;
+    public UnityEngine.Transform shellSpawnPoint;
 
     //Variable for turret rotational speed
     public float turretRotationalSpeed = 3f;

@@ -15,15 +15,12 @@ public class Shell : MonoBehaviour {
     //Called when the Rigidbody hits something
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Enemy")
         {
-            other.gameObject.GetComponent<MoveMe>().TakeDamage(damage);
+            other.gameObject.GetComponent<Transform>().TakeDamage(damage);
         }
-        Destroy(this.gameObject);
+        Destroy(this.gameObject); 
     }
 
-    // Update is called once per frame
-    void Update () {
-		
-	}
+
 }

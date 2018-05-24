@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 135732247924106794}
   - component: {fileID: 23990253603807630}
   - component: {fileID: 114486405144502020}
-  - component: {fileID: 54051304811039404}
+  - component: {fileID: 54158511079301504}
   m_Layer: 0
   m_Name: Shell
   m_TagString: Untagged
@@ -85,7 +85,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1506287712186910}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54051304811039404
+--- !u!54 &54158511079301504
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f0ac33098c67241ae7af1650eb18dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 10
 --- !u!135 &135732247924106794
 SphereCollider:
   m_ObjectHideFlags: 1
