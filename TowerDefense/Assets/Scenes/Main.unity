@@ -5742,6 +5742,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5a8ee8097814474c927d1efa37b7983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnPositions:
+  - {fileID: 1916127418}
+  - {fileID: 2023021551}
+  characterPrefab: {fileID: 1400680233504286, guid: 278188e0e77645d4ab9c6d3d8afa98a1,
+    type: 2}
+  spawnPoint: {fileID: 488648639}
+  randomSpawnPos: {x: 0, y: 0, z: 0}
 --- !u!4 &1080390424
 Transform:
   m_ObjectHideFlags: 0
@@ -5753,7 +5760,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1092519292
 Mesh:
@@ -11206,7 +11213,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-53368
+  m_Name: pb_Mesh11366
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -14745,12 +14752,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1916127417}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2023021550
 GameObject:
@@ -14773,12 +14780,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023021550}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 10, y: 2, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2053363635
 GameObject:

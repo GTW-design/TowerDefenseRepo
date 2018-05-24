@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour {
 
+    public List<Transform> spawnPositions = new List<Transform>();
+    //Declaring characterPrefab as an object
     public GameObject characterPrefab;
-    public List<Character> characterList = new List<Character>();
-    public List<Transform> spawnPointList = new List<Transform>();
+    //Declaring spawnpoint as an object
+    public GameObject spawnPoint;
+    public Vector3 randomSpawnPos;
 
 	// Use this for initialization
 	void Start () {
+
+        InvokeRepeating("SpawnCharacter", 2, 2);
 		
 	}
 	
@@ -17,27 +22,15 @@ public class SpawnManager : MonoBehaviour {
 	void Update ()
     {
 
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            SpawnNewCharacter();
-        }
-		
-	}
-
-    void SpawnNewCharacter()
-    {
-        Transform selectedSpawnPoint = spawnPointList[Random.Range(0, spawnPointList.Count)];
-        GameObject newDuck = Instantiate(characterPrefab, selectedSpawnPoint.position, selectedSpawnPoint.rotation);
-
-        characterList.Add(newDuck.GetComponent<Character>());
-
     }
 
-    void GetCharacterName()
+    void SpawnCharacter ()
     {
-        int i = Random.Range(0, characterList.Count);
+        Transform randomSpawnPos = spawnPositions[Random.Range(0, spawnPositions.Count)];
 
-        Debug.Log("This character is called" + characterList[1].name);
+        GameObject newCharacter = Instantiate(characterPrefab, randomSpawnPos.position, randomSpawnPos.rotation) as GameObject;
     }
+
+     
 }
 

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Transform : MonoBehaviour {
+public class Character : MonoBehaviour {
 
     public float speed;
     private Waypoints Wpoints;
@@ -22,6 +22,8 @@ public class Transform : MonoBehaviour {
 
     //A reference to the shell prefab
     public GameObject shellPrefab;
+    internal Vector3 position;
+    internal readonly Quaternion rotation;
 
     void Start()
     {
@@ -51,10 +53,5 @@ public class Transform : MonoBehaviour {
             }
     
         }
-    }
-
-    public static implicit operator Transform(Transform v)
-    {
-        throw new NotImplementedException();
     }
 }

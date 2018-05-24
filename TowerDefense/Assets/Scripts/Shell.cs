@@ -17,7 +17,7 @@ public class Shell : MonoBehaviour {
     {
         if (other.gameObject.tag == "Enemy")
         {
-            other.gameObject.GetComponent<Transform>().TakeDamage(damage);
+            other.gameObject.GetComponent<Character>().TakeDamage(damage);
         }
         Destroy(this.gameObject); 
     }
